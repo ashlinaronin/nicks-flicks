@@ -14,7 +14,7 @@ flicks.config(function($stateProvider, $urlRouterProvider) {
         controller: 'ReviewsCtrl'
     });
 
-    // Use nested state to show review body
+    // Use nested state to show review body. Same controller will do.
     $stateProvider.state('reviews.detail', {
         url: "/:reviewId",
         templateUrl: "partials/reviews.detail.html",
