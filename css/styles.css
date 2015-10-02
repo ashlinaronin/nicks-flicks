@@ -1,3 +1,20 @@
 body {
     padding-top: 70px;
+    /*filter: invert(0%);*/
 }
+
+.inverted {
+	color: white;
+    background-color: black;
+}
+
+
+/*.btn .btn-default {
+    background-color: black;
+    color: white;
+}*/
+
+/*#body, #title {
+    background-color: black;
+    color: white;
+}*/
