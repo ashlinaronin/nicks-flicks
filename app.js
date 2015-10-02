@@ -16,7 +16,7 @@ flicks.config(function($stateProvider, $urlRouterProvider) {
 
     $stateProvider.state('reviews.review', {
         url: "/:reviewId",
-        templateUrl: "partials/reviews.review.html",
+        templateUrl: "partials/reviews.html",
         controller: 'ReviewsCtrl'
     });
 
