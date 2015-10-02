@@ -13,15 +13,28 @@
         <script src="directives/myDirectives.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/styles.css">
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<nav class="navbar navbar-default navbar-fixed-top" id="nick-nav">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="/">Nick's Flicks</a>
+					<div class="row">
+                        <div class="col-sm-12">
+                        <a class="navbar-brand" href="/">Nick's Flicks</a>
+
+                        </div>
+					</div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Let's talk about movies.</p>
+                        </div>
+
+                    </div>
 				</div>
-                <button class="btn btn-default inv-btn" type="button" name="button" invert>Invert</button>
-			</div>
+                <button class="btn btn-default btn-lg navbar-btn inv-btn pull-right" type="button" name="button" invert>Invert</button>
+
+            </div>
 		</nav>
 		<div class="container">
 			<div ui-view></div>

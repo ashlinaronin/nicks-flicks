@@ -1,6 +1,24 @@
 body {
-    padding-top: 70px;
-    /*filter: invert(0%);*/
+    padding-top: 100px;
+    font-family: "Lucida Grande", "Helvetica Neue", Helvetica;
+}
+
+h1, h2, h3, h4, h5, nav {
+    font-family: "Josefin Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding-top: 10px;
+    font-size: smaller;
+}
+
+a {
+    text-decoration: underline;
 }
 
 .inverted {
@@ -8,13 +26,6 @@ body {
     background-color: black;
 }
 
-
-/*.btn .btn-default {
-    background-color: black;
-    color: white;
-}*/
-
-/*#body, #title {
-    background-color: black;
-    color: white;
-}*/
+#welcome {
+    padding-top: 100px;
+}

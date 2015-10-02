@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-4">
         <ul>
             <li ng-repeat="review in reviews">
                 <a ui-sref="reviews.detail({reviewId: review.id})">
@@ -8,7 +8,7 @@
             </li>
         </ul>
     </div>
-    <div class="col-sm-9">
+    <div class="col-sm-8">
 
         <!-- this is used for the current review nested state -->
         <div ui-view></div>
@@ -16,9 +16,9 @@
 
         <div id="new-review">
             <h3>Create New Movie Review</h3>
-            <form ng-submit="addReview()">
-                <input type="text" ng-model="reviewTitle" class="form-control" id="review-title"></input>
-                <textarea ng-model="reviewBody" rows="8" class="form-control" id="review-body"></textarea>
+            <form ng-submit="ReviewsFactory.addReview()">
+                <input type="text" ng-model="ReviewsFactory.reviewTitle" class="form-control" id="review-title" placeholder="Review title" required></input>
+                <textarea ng-model="ReviewsFactory.reviewBody" rows="8" class="form-control" id="review-body" placeholder="Your review here" required></textarea>
                 <button type="submit" class="btn btn-default inv-btn">Submit</button>
             </form>
         </div>
