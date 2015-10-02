@@ -1,17 +1,17 @@
 <div class="row">
     <div class="col-sm-3">
         <ul>
-            <a ui-sref="reviews({reviewId: review.id})">
-                <li ng-repeat="review in reviews">{{ review.title }}</li>
-            </a>
+            <li ng-repeat="review in reviews">
+                <a ui-sref="reviews.detail({reviewId: review.id})">
+                    {{ review.title }}
+                </a>
+            </li>
         </ul>
     </div>
     <div class="col-sm-9">
 
         <!-- this only comes up if there is a current review-->
-        <div ng-show="currentReview">
-            <h3>{{ currentReview.title }}</h3>
-            <p>{{ currentReview.body }}</p>
+        <div ui-view>
 
         </div>
 
